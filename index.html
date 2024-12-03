@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神奇答案之书 | 解答你的小愿望</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 装饰性emoji -->
+        <div class="emoji-decorations">
+            <span>✨</span>
+            <span>🌟</span>
+            <span>💫</span>
+            <span>🎈</span>
+            <span>🎊</span>
+        </div>
+
+        <!-- 首页输入区 -->
+        <div class="input-page" id="inputPage">
+            <h1>✨ 神奇答案之书 ✨</h1>
+            <p class="subtitle">告诉我你的小愿望，我来给你一个扎心的答案</p>
+            <div class="wish-input-container">
+                <input type="text" id="wishInput" placeholder="例如：我明年能升职加薪吗？" maxlength="50">
+                <button id="askButton">翻开答案</button>
+            </div>
+        </div>
+
+        <!-- 答案卡片页 -->
+        <div class="answer-page hidden" id="answerPage">
+            <div class="answer-card">
+                <div class="card-header">神奇答案之书</div>
+                <div class="wish-text" id="displayWish"></div>
+                <div class="answer-text" id="displayAnswer"></div>
+                <div class="card-footer">
+                    <button id="saveButton">保存答案卡</button>
+                    <button id="tryAgainButton">再来一次</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
